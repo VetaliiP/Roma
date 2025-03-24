@@ -1,0 +1,67 @@
+/* TextEffect.css */
+
+/* .animated_link {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    display: inline-block;
+} */
+
+/* Эффект с разной высотой букв при наведении */
+.animated_link span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* При наведении на ссылку: сдвигаем буквы */
+.animated_link:hover span:nth-child(odd) {
+    transform: translateY(-2px);
+    /* Сдвигаем буквы вверх */
+}
+
+.animated_link:hover span:nth-child(even) {
+    transform: translateY(2px);
+    /* Сдвигаем буквы вниз */
+}
+
+.animated_link_rotate {
+    transition: 0.3s;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.animated_link_rotate:hover {
+    transform: rotate(-15deg);
+    transition: 0.3s;
+}
+
+.active_link {
+    transform: rotate(-15deg);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.animated_link_spacing {
+    transition: 0.3s;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.animated_link_spacing:hover {
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.active_link_italic {
+    font-style: italic;
+}
+
+.animated_link_italic {
+    transition: 0.3s;
+}
+
+.animated_link_italic:hover {
+    font-style: italic;
+    transition: 0.3s;
+}
