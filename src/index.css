@@ -46,3 +46,8 @@ main {
   align-items: center;
   margin-top: 50px;
 }
+
+::selection {
+  background-color: purple;
+  color: white;
+}
