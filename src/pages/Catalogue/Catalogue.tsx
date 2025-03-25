@@ -34,7 +34,7 @@ export const Catalogue: FC = () => {
                             className='flex-1 '
                             state={item}
                         >
-                            <div className={`h-full w-auto flex justify-between p-2 bg-[url(${item.image})]  bg-contain bg-center bg-no-repeat text-black`}>
+                            <div className={`h-full w-auto flex justify-between p-2 bg-[url("${item.image}")]  bg-contain bg-center bg-no-repeat text-black`}>
                                 <span>Number: {item.id}</span>
                                 <span>{item.name}</span>
                             </div>
