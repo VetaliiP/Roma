@@ -1,0 +1,54 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -35%;
+    /* скрыто за пределами экрана */
+    height: 100%;
+    width: 35%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease;
+    /* Плавное выезжание */
+    padding-top: 60px;
+    z-index: 999;
+}
+
+.sidebar.open {
+    left: 0;
+    /* Когда меню открыто, оно выезжает */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 8px 16px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu_button {
+    font-size: 16px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    z-index: 1000;
+}
+
+.close_button {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
