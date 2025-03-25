@@ -11,7 +11,7 @@ export const Header: FC = () => {
     return (
         <header className='flex flex-row items-center px-4 font-bold'>
             <nav className='flex flex-row w-full p-4 '>
-                <NavLink to="/catalogue/12">
+                <NavLink to="/catalogueslider">
                     <p className='tracking-[2px]'>R O <i>M</i> A</p>
                 </NavLink>
                 <div className='flex flex-row  max-w-lg w-full mx-auto'>
