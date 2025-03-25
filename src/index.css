@@ -38,3 +38,11 @@ main {
   margin: 0 auto;
   padding: 0 16px 0 16px;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}

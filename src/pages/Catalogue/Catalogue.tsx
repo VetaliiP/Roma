@@ -23,13 +23,15 @@ const items: Item[] = [
 
 export const Catalogue: FC = () => {
     return (
-        <div className=''>
-            <ul className='wrapper flex flex-wrap gap-4 justify-center'>
+        <div className='mt-[50px]'>
+            <ul className='flex flex-wrap gap-4 justify-center'>
                 {items.map((item) => (
-                    <li key={item.id} className='min-w-[30%] h-[300px] border-1 flex flex-row justify-around'>
-                        <Link to={`/catalogue/${item.id}`}>
-                            <span>Number: {item.id}</span>
-                            <span>{item.name}</span>
+                    <li key={item.id} className='min-w-[300px] h-[300px] border-1 flex flex-row justify-around'>
+                        <Link to={`/catalogue/${item.id}`} className='flex-1 '>
+                            <div className='h-full w-auto flex justify-between p-2 bg-[url("./assets/Banana-tree.png")]  bg-contain bg-center bg-no-repeat text-black'>
+                                <span>Number: {item.id}</span>
+                                <span>{item.name}</span>
+                            </div>
                         </Link>
                     </li>
                 ))}
