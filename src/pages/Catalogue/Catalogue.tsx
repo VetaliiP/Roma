@@ -8,18 +8,18 @@ interface Item {
 }
 
 const items: Item[] = [
-    { id: 1, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 2, name: "Banana", image: "./assets/Banana-tree.png" },
-    { id: 3, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 4, name: "Banana", image: "./assets/Banana-tree.png" },
-    { id: 5, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 6, name: "Banana", image: "./assets/Banana-tree.png" },
-    { id: 7, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 8, name: "Banana", image: "./assets/Banana-tree.png" },
-    { id: 9, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 10, name: "Banana", image: "./assets/Banana-tree.png" },
-    { id: 11, name: "Apple", image: "./assets/Banana-tree.png" },
-    { id: 12, name: "Banana", image: "./assets/Banana-tree.png" },
+    { id: 1, name: "Apple", image: "/Banana-tree.png" },
+    { id: 2, name: "Banana", image: "/Banana-tree.png" },
+    { id: 3, name: "Apple", image: "/Banana-tree.png" },
+    { id: 4, name: "Banana", image: "/Banana-tree.png" },
+    { id: 5, name: "Apple", image: "/Banana-tree.png" },
+    { id: 6, name: "Banana", image: "/Banana-tree.png" },
+    { id: 7, name: "Apple", image: "/Banana-tree.png" },
+    { id: 8, name: "Banana", image: "/Banana-tree.png" },
+    { id: 9, name: "Apple", image: "/Banana-tree.png" },
+    { id: 10, name: "Banana", image: "/Banana-tree.png" },
+    { id: 11, name: "Apple", image: "/Banana-tree.png" },
+    { id: 12, name: "Banana", image: "/Banana-tree.png" },
 ];
 
 export const Catalogue: FC = () => {
@@ -34,7 +34,7 @@ export const Catalogue: FC = () => {
                             className='flex-1 '
                             state={item}
                         >
-                            <div className={`h-full w-auto flex justify-between p-2 bg-[url("${item.image}")]  bg-contain bg-center bg-no-repeat text-black`}>
+                            <div className={`h-full w-auto flex justify-between p-2 bg-[url('${item.image}')]  bg-contain bg-center bg-no-repeat text-black`}>
                                 <span>Number: {item.id}</span>
                                 <span>{item.name}</span>
                             </div>
