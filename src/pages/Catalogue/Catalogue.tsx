@@ -37,6 +37,7 @@ export const Catalogue: FC = () => {
                             <div className={`h-full w-auto flex justify-between p-2 bg-[url('${item.image}')]  bg-contain bg-center bg-no-repeat text-black`}>
                                 <span>Number: {item.id}</span>
                                 <span>{item.name}</span>
+                                <img src={item.image} className='size-full'></img>
                             </div>
                         </Link>
                     </li>
