@@ -20,8 +20,8 @@ export const ProductDetail: FC = () => {
                 </span>
             </div>
             <div className='flex-1 flex justify-center items-center'>
-                <div className={`size-[400px] bg-[url("${product.image}")]  bg-contain bg-center bg-no-repeat`}>
-
+                <div className={`size-[400px] relative`}>
+                    <img src={product.image} className='size-full absolute top-[0] left-[0] -z-10'></img>
                 </div>
             </div>
         </div>
