@@ -8,19 +8,30 @@ export const ProductDetail: FC = () => {
 
     return (
         <section className='flex-1 flex flex-col p-4'>
-            <div className='w-full flex flex-row justify-center items-center px-4 '>
-                <span>{product.name}</span>
-            </div>
+
             <div className='flex-1 flex flex-col'>
-                <div className='flex-1 flex md:flex-row flex-col items-center'>
+                <div className='flex-1 flex md:flex-row flex-col '>
                     <div className={`w-[60%] relative flex justify-center items-center`}>
                         <img src={product.image} className='min-w-[200px] max-w-[400px] contain-content'></img>
                     </div>
-                    <div className='w-[40%] flex flex-col'>
-                        <span>Тип бумаги</span>
-                        <span>Количество на листе</span>
-                        <span>Размер</span>
-                        <span>Копий</span>
+                    <div className='w-[40%] flex flex-col justify-around items-start'>
+                        <div >
+                            <span className='text-2xl font-bold'>#STICKER-PACK</span>
+                        </div>
+                        <div className='flex-1'>
+
+                        </div>
+                        <div className='flex-2 flex flex-col justify-center'>
+                            <span>Тип бумаги</span>
+                            <span>Количество на листе</span>
+                            <span>Размер</span>
+                            <span>Копий</span>
+                        </div>
+                        <div>
+                            <button className=' rounded-2xl py-2 px-6 text-xl border-2 hover:bg-black hover:text-white transition-all duration-300 cursor-pointer'>
+                                Buy-Buy
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div className='flex-4 p-8 flex justify-center'>
