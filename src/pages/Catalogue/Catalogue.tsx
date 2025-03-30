@@ -8,11 +8,11 @@ interface Item {
 }
 
 const items: Item[] = [
-    { id: 1, name: "Apple", image: "/Banana-tree.png" },
-    { id: 2, name: "Banana", image: "/Banana-tree.png" },
-    { id: 3, name: "Apple", image: "/Banana-tree.png" },
-    { id: 4, name: "Apple", image: "/Banana-tree.png" },
-    { id: 5, name: "Banana", image: "/Banana-tree.png" },
+    { id: 1, name: "Apple", image: "/sticker_pack.jpg" },
+    { id: 2, name: "Banana", image: "/sticker_pack.jpg" },
+    { id: 3, name: "Apple", image: "/sticker_pack.jpg" },
+    { id: 4, name: "Apple", image: "/sticker_pack.jpg" },
+    { id: 5, name: "Banana", image: "/sticker_pack.jpg" },
 ];
 
 export const Catalogue: FC = () => {
