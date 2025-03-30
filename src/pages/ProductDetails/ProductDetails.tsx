@@ -1,7 +1,5 @@
 import { FC } from 'react';
 import { useLocation } from "react-router-dom";
-import { Sidebar } from '../../components/Sidebar/Sidebar';
-import { Link } from 'react-router-dom';
 
 export const ProductDetail: FC = () => {
 
@@ -9,21 +7,26 @@ export const ProductDetail: FC = () => {
     const product = location.state;
 
     return (
-        <div className='size-full flex flex-col justify-start items-center pt-[50px]'>
-            <div className='w-full flex flex-row justify-between items-center px-4 '>
-                <Sidebar description={product.name} />
+        <section className='flex-1 flex flex-col p-4'>
+            <div className='w-full flex flex-row justify-center items-center px-4 '>
                 <span>{product.name}</span>
-                <span>
-                    <Link to="/catalogueslider">
-                        All products
-                    </Link>
-                </span>
             </div>
-            <div className='flex-1 flex justify-center items-center'>
-                <div className={`size-[400px] relative`}>
-                    <img src={product.image} className='size-full absolute top-[0] left-[0] -z-10'></img>
+            <div className='flex-1 flex flex-col'>
+                <div className='flex-1 flex md:flex-row flex-col items-center'>
+                    <div className={`w-[60%] relative flex justify-center items-center`}>
+                        <img src={product.image} className='min-w-[200px] max-w-[400px] contain-content'></img>
+                    </div>
+                    <div className='w-[40%] flex flex-col'>
+                        <span>Тип бумаги</span>
+                        <span>Количество на листе</span>
+                        <span>Размер</span>
+                        <span>Копий</span>
+                    </div>
+                </div>
+                <div className='flex-4 p-8 flex justify-center'>
+                    description
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

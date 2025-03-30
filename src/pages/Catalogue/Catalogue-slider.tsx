@@ -6,7 +6,7 @@ export const CatalogueSlider: FC = () => {
 
 
     return (
-        <div className='size-full flex justify-center items-center'>
+        <div className='flex-1 size-full flex justify-center items-center'>
             SliderMenu
         </div>
     )

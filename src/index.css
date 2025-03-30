@@ -1,13 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,14 +18,26 @@ body {
   min-height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+  /* Убирает скролл в Chrome, Edge, Safari */
+}
+
 .page-wrapper {
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 main {
   flex-grow: 1;
+  height: 100%;
+
+}
+
+main ul {
+  overflow: auto;
 }
 
 .container {
@@ -48,6 +55,6 @@ main {
 }
 
 ::selection {
-  background-color: purple;
+  background-color: rgb(1, 204, 255);
   color: white;
 }

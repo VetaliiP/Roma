@@ -7,7 +7,7 @@ export const Layout: FC = () => {
 
         <div className='page-wrapper'>
             <Header />
-            <main>
+            <main className='flex flex-col'>
                 <Outlet />
             </main>
 
