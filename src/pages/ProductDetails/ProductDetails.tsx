@@ -16,7 +16,7 @@ export const ProductDetail: FC = () => {
                     </div>
                     <div className='w-[40%] flex flex-col justify-around items-start'>
                         <div >
-                            <span className='text-2xl font-bold'>#STICKER-PACK</span>
+                            <span className='text-2xl font-bold'>{product.name}</span>
                         </div>
                         <div className='flex-1'>
 

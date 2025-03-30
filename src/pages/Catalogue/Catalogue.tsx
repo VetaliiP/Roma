@@ -8,11 +8,11 @@ interface Item {
 }
 
 const items: Item[] = [
-    { id: 1, name: "Apple", image: "/sticker_pack.jpg" },
-    { id: 2, name: "Banana", image: "/sticker_pack.jpg" },
-    { id: 3, name: "Apple", image: "/sticker_pack.jpg" },
-    { id: 4, name: "Apple", image: "/sticker_pack.jpg" },
-    { id: 5, name: "Banana", image: "/sticker_pack.jpg" },
+    { id: 1, name: "#STICKER_PACK №1", image: "/sticker_pack.jpg" },
+    { id: 2, name: "#STICKER_PACK №2", image: "/sticker_pack.jpg" },
+    { id: 3, name: "#STICKER_PACK №3", image: "/sticker_pack.jpg" },
+    { id: 4, name: "#STICKER_PACK №4", image: "/sticker_pack.jpg" },
+    { id: 5, name: "#STICKER_PACK №5", image: "/sticker_pack.jpg" },
 ];
 
 export const Catalogue: FC = () => {
@@ -28,7 +28,6 @@ export const Catalogue: FC = () => {
                             state={item}
                         >
                             <div className={`h-full w-auto flex justify-between p-2 text-black relative `}>
-                                <span>Number: {item.id}</span>
                                 <span>{item.name}</span>
                                 <img src={item.image} className='size-full absolute top-[0] left-[0] -z-10  contain-content' ></img>
                             </div>
